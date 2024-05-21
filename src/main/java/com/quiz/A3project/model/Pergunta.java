@@ -1,5 +1,4 @@
 package com.quiz.A3project.model;
-
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
@@ -30,5 +29,4 @@ public class Pergunta {
     @JsonManagedReference
     @OneToMany(mappedBy = "pergunta", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Resposta> respostas;
-
 }
