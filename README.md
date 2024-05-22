@@ -1,7 +1,8 @@
+## 🔎 Para visualizar o Frontend em JavaScript vá para esse [repositório](https://github.com/Iuryppedrosa/A3-quiz-Js-Puro)
 
 https://github.com/Iuryppedrosa/ProjetoA3-UNA-TestJunit/assets/89420889/9765e116-289b-4585-825b-927877b57e30
 
-# Projeto Quiz
+# 📚 Projeto Quiz
 
 **Quiz**, é uma aplicação baseada em Java e Spring Boot que permite a criação e gerenciamento de perguntas e respostas para um jogo de quiz.
 
