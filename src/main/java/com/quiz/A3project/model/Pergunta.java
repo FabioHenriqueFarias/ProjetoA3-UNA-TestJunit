@@ -29,4 +29,12 @@ public class Pergunta {
     @JsonManagedReference
     @OneToMany(mappedBy = "pergunta", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Resposta> respostas;
+
+    @Override
+    public String toString() {
+        return "Pergunta{" +
+                "id=" + id +
+                ", textoDaPergunta='" + textoDaPergunta + '\'' +
+                '}';
+    }
 }

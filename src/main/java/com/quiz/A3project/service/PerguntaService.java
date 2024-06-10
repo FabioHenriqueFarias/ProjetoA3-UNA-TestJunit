@@ -7,12 +7,15 @@ import com.quiz.A3project.repository.RespostaRepository;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class PerguntaService {
+    private static final Logger logger = LoggerFactory.getLogger(PerguntaService.class);
 
 
     private final PerguntaRepository perguntaRepository;
@@ -49,6 +52,8 @@ public class PerguntaService {
                 .orElseThrow(() -> new RuntimeException("Resposta não encontrada"));
 
         pergunta.setRespostaCorreta(resposta);
+
+
         return perguntaRepository.save(pergunta);
     }
 
